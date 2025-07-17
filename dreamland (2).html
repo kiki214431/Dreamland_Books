@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DREAMLAND BOOKS</title>
+  <meta name="google-site-verification" content="1ZQk7JxOaFZK_Nq2gUHEHDgScUJ6xD--XRSTF2D6LSg" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffe5ec;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+      background-color: #ffc4d6;
+      flex-wrap: wrap;
+    }
+
+    .hero-text h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin: 0 0 20px 0;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      max-width: 500px;
+    }
+
+    .hero-image img {
+      max-width: 320px;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    /* HOME BOOK CARDS SECTION */
+    .home-intro {
+      padding: 60px 10%;
+      background-color: #fff0f5;
+      text-align: center;
+    }
+
+    .intro-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .intro-text p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .featured-books {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .book-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .book-card h3 {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .book-card p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* SERVICES PAGE STYLING */
+    .services-header {
+      text-align: center;
+      padding: 50px 10%;
+      background-color: #ffe5ec;
+    }
+
+    .services-header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .services-header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .landscape-section img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .portrait-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 50px 10%;
+      background-color: #fff0f5;
+    }
+
+    .portrait-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .portrait-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .portrait-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .portrait-card h3 {
+      margin: 15px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-image {
+        margin-top: 30px;
+      }
+      .featured-books {
+        flex-direction: column;
+        align-items: center;
+      }
+      .portrait-card img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Behind the Pages</h2>
+      <h1>Stories Reimagined:<br>Dreamland X Books</h1>
+      <p>Explore a universe of emotions through romance, mystery, and timeless classics.</p>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.postimg.cc/NjqRbvmn/Screenshot-7.png" alt="Dreamland Books Logo">
+    </div>
+  </section>
+
+  <!-- HOME BOOK CARDS -->
+  <section class="home-intro">
+    <div class="intro-text">
+      <h2>Welcome to Dreamland Books</h2>
+      <p>From timeless classics to twisted dark romances and mysteries that tingle your spine — discover a new chapter in every genre.</p>
+    </div>
+
+    <div class="featured-books">
+      <div class="book-card">
+        <img src="https://i.postimg.cc/k4fVdkV7/VINTAGE-BOOK.jpg" alt="Vintage Classics">
+        <h3>Vintage Classics</h3>
+        <p>Stories that shaped generations with timeless narratives and elegant prose.</p>
+      </div>
+      <div class="book-card">
+        <img src="https://i.postimg.cc/85KCYM35/ROMCOM-BOOKS.jpg" alt="Rom-Com Delights">
+        <h3>Rom-Com Delights</h3>
+        <p>Romantic comedies that make you blush, smile, and believe in love again.</p>
+      </div>
+      <div class="book-card">
+        <img src="https://i.postimg.cc/430kkyWw/MODERN-BOOK.jpg" alt="Modern Narratives">
+        <h3>Modern Narratives</h3>
+        <p>Fresh, thrilling, and dark reads from contemporary voices worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PAGE -->
+  <section class="services-header">
+    <h1>Our Book Services</h1>
+    <p>Explore exclusive editions, rare finds, and personalized recommendations tailored for every book lover.</p>
+  </section>
+
+  <!-- LANDSCAPE IMAGE -->
+  <section class="landscape-section">
+    <img src="https://i.postimg.cc/wBbvfDnB/SER-LANDSCAPE.jpg" alt="Bookshelf Landscape">
+  </section>
+
+  <!-- PORTRAIT GRID -->
+  <section class="portrait-grid">
+    <div class="portrait-card">
+      <img src="https://i.postimg.cc/rwfFsSV9/SER-POTRAIT-1.jpg" alt="Service 1">
+      <h3>Rare Vintage Books</h3>
+    </div>
+    <div class="portrait-card">
+      <img src="https://i.postimg.cc/Y9YH6gHZ/SER-POTRAIT-2.jpg" alt="Service 2">
+      <h3>Rom-Com Collections</h3>
+    </div>
+    <div class="portrait-card">
+      <img src="https://i.postimg.cc/4NJgcmF2/SER-POTRAIT-3.jpg" alt="Service 3">
+      <h3>Dark Romance Series</h3>
+    </div>
+    <div class="portrait-card">
+      <img src="https://i.postimg.cc/JhBV8JG0/SER-POTRAIT-4.jpg" alt="Service 4">
+      <h3>Mystery & Thrillers</h3>
+    </div>
+    <div class="portrait-card">
+      <img src="https://i.postimg.cc/KcfWdQJQ/SER-POTRAIT-5.jpg" alt="Service 5">
+      <h3>Modern Fiction Picks</h3>
+    </div>
+    <div class="portrait-card">
+      <img src="https://i.postimg.cc/3xsfgqxr/SER-POTRAIT-6.jpg" alt="Service 6">
+      <h3>Exclusive Editions</h3>
+    </div>
+  </section>
+
+</body>
+</html>
